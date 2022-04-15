@@ -14,7 +14,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
     - name: Generate Formula
-      working-directory: Versions
+      working-directory: ./Versions
       run: |
         gen_formula.sh
     - name: Commit changes
