@@ -1,0 +1,22 @@
+name: update formula
+
+on:
+  push:
+    paths:
+      - './Versions/**'
+
+jobs:
+  build-linux:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Generate Formula
+      working-directory: Versions
+      run: |
+        gen_formula.sh
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v9
+      with:
+        default_author: github_actions
+

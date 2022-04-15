@@ -1,14 +1,18 @@
-# Brew Formua for cg-manage-rds
+# Brew Tap for Cloud.Gov
 
-This is repo holds the homebrew formula and tap to install the cg-manage-rds utility.
+This is repo holds the homebrew formulae for utilities from [cloud.gov](https://www.cloud.gov)
 
+## Installation
 ```
-brew install rbogle/cg-manage-rds/cg-manage-rds
+brew install rbogle/cloudgov/<formula>
 ```
 
 or
 
 ```
-brew tap rbogle/cg-manage-rds
-brew install cg-manage-rds
+brew tap rbogle/cloudgov
+brew install <formula>
 ````
+
+## Current Formulae
+- [cg-manage-rds](Formula/cg-manage-rds.rb)
