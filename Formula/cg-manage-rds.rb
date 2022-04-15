@@ -1,3 +1,4 @@
+# Automatically generated from a template
 class CgManageRds < Formula
     include Language::Python::Virtualenv
     desc "An open source cli-tool for export and import of RDS databases in cloud.gov"
