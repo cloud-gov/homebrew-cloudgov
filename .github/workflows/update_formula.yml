@@ -2,8 +2,10 @@ name: update formula
 
 on:
   push:
+    branches:
+      - main
     paths:
-      - './Versions/**'
+      - 'Versions/**'
 
 jobs:
   build-linux:
