@@ -13,6 +13,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3
+      with:
+        token: ${{secrets.CGCIBOT_PAT}}
     - name: Generate Formula
       working-directory: ./Versions
       run: |
@@ -21,5 +23,5 @@ jobs:
     - name: Commit changes
       uses: EndBug/add-and-commit@v9
       with:
-        default_author: github_actions
+        author_name: cg-ci-bot
 
