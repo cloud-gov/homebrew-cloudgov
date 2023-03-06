@@ -14,7 +14,8 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
       with:
-        token: ${{secrets.CGCIBOT_PAT}}
+        repository: cloud-gov/homebrew-cloudgov
+	token: ${{secrets.CGCIBOT_PAT}}
     - name: Generate Formula
       working-directory: ./Versions
       run: |
