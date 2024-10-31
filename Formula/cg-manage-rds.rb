@@ -4,9 +4,9 @@ class CgManageRds < Formula
     include Language::Python::Virtualenv
     desc "An open source cli-tool for export and import of RDS databases in cloud.gov"
     homepage "https://github.com/cloud-gov/cg-manage-rds"
-    url "https://api.github.com/repos/cloud-gov/cg-manage-rds/tarball/v0.2.9"
-    version "v0.2.9"
-    sha256 "d3b0d49abcb07e9cc6a4bd6d672695999f488d59648f9a82ef7f573ad8766410"
+    url "https://api.github.com/repos/cloud-gov/manage-rds/tarball/v0.2.10"
+    version "v0.2.10"
+    sha256 "49909b1223322c3632c9ea20be685fccab250db092f214ae7702cfb111492373"
   
     depends_on "python@3.9"
   
